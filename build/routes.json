@@ -3,14 +3,12 @@
     "name": "inspire",
     "path": "/inspire",
     "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_2289da22"
+    "chunkName": "pages/inspire"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_50908827"
+    "chunkName": "pages/index"
   }
 ]

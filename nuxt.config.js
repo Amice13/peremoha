@@ -111,6 +111,12 @@ export default {
     dir: 'docs'
   },
   build: {
-    publicPath: 'https://amice13.github.io/peremoha'
+   extend (config, { isDev, isClient }) {
+      if (!isDev) {
+        // relative links, please.
+        config.output.publicPath = './_nuxt/'
+      }
+      return config;
+    }
   }
 }
