@@ -114,9 +114,9 @@ export default {
    extend (config, { isDev, isClient }) {
       if (!isDev) {
         // relative links, please.
-        config.output.publicPath = './_nuxt/'
+        config.output.publicPath = 'https://amice13.github.io/peremoha/'
       }
-      return config;
+      return config
     }
   }
 }
