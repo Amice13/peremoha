@@ -17,7 +17,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Родем - танцювальна школа для людей будь-якого віку і рівнів підготовки. Тут кожного вчать техніці, емоціям та цьому прекрасному мистетству - МИСТЕТСТВУ ТАНЦЮ!' },
+      { hid: 'description', name: 'description', content: 'Благодійний аукціон "Перемога починається з тебе"' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
@@ -111,12 +111,12 @@ export default {
     dir: 'docs'
   },
   build: {
-   extend (config, { isDev, isClient }) {
+    extend (config, { isDev, isClient }) {
       if (!isDev) {
         // relative links, please.
-        config.output.publicPath = 'https://amice13.github.io/peremoha/'
+        config.output.publicPath = './_nuxt/'
       }
-      return config
+      return config;
     }
   }
 }
