@@ -3,21 +3,18 @@
     "name": "inspire",
     "path": "/inspire",
     "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_2289da22"
+    "chunkName": "pages/inspire"
   },
   {
     "name": "peremoha",
     "path": "/peremoha",
     "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\peremoha.vue",
-    "chunkName": "pages/peremoha",
-    "_name": "_d0465184"
+    "chunkName": "pages/peremoha"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_50908827"
+    "chunkName": "pages/index"
   }
 ]
