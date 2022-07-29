@@ -14,7 +14,7 @@
     </v-navigation-drawer>
     <v-app-bar fixed app dark color="primary">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <div class="d-flex">
+      <div @click="goHome" class="d-flex cursor-pointer">
         <v-img src="/white-logo.svg" height="50" width="70" contain></v-img>
         <div>
           <div class="fw-400 accent--text fs-120">ПЕРЕМОГА</div>
@@ -22,8 +22,8 @@
         </div>
       </div>
       <v-spacer />
-      <v-btn class="hidden-sm-and-down" text>Товари</v-btn>
-      <v-btn class="hidden-sm-and-down" text>Благодійність</v-btn>
+      <v-btn class="hidden-sm-and-down" text router to="/search">Лоти</v-btn>
+      <v-btn class="hidden-sm-and-down" text router to="/rules">Правила</v-btn>
     </v-app-bar>
     <v-main>
       <v-container fluid>
@@ -45,11 +45,17 @@
 <script>
 export default {
   name: 'DefaultLayout',
+  transition: 'fade',
   data () {
     return {
       drawer: false,
       items: [
       ],
+    }
+  },
+  methods: {
+    goHome () {
+      this.$router.push('/')
     }
   }
 }
@@ -91,5 +97,16 @@ export default {
 }
 .v-card__title.tt {
   font-family: 'TT Norms Pro' !important; font-style: normal;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>

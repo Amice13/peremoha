@@ -1,17 +1,24 @@
 [
   {
-    "name": "inspire",
-    "path": "/inspire",
-    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_2289da22"
+    "name": "rules",
+    "path": "/rules",
+    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\rules.vue",
+    "chunkName": "pages/rules",
+    "_name": "_050c0dcc"
   },
   {
-    "name": "peremoha",
-    "path": "/peremoha",
-    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\peremoha.vue",
-    "chunkName": "pages/peremoha",
-    "_name": "_d0465184"
+    "name": "search",
+    "path": "/search",
+    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\search.vue",
+    "chunkName": "pages/search",
+    "_name": "_6d3f5623"
+  },
+  {
+    "name": "lot-id",
+    "path": "/lot/:id?",
+    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\lot\\\\_id.vue",
+    "chunkName": "pages/lot/_id",
+    "_name": "_6c90ae78"
   },
   {
     "name": "index",

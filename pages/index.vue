@@ -44,25 +44,25 @@
           <v-col cols="12" md="3" class="mt-8 mb-8">
             <div class="fw-600">Трофеї</div>
             <v-icon style="font-size: 500%;">mdi-pistol</v-icon>
-            <div class="fw-600 fs-150">25</div>
+            <div class="fw-600 fs-150">{{ counts['Трофеї'] }}</div>
           </v-col>
 
           <v-col cols="12" md="3" class="mt-8 mb-8">
             <div class="fw-600">Книги</div>
             <v-icon style="font-size: 500%;">mdi-book-open-variant</v-icon>
-            <div class="fw-600 fs-150">33</div>
+            <div class="fw-600 fs-150">{{ counts['Книги'] }}</div>
           </v-col>
 
           <v-col cols="12" md="3" class="mt-8 mb-8">
             <div class="fw-600">Живопис</div>
             <v-icon style="font-size: 500%;">mdi-palette</v-icon>
-            <div class="fw-600 fs-150">10</div>
+            <div class="fw-600 fs-150">{{ counts['Живопис'] }}</div>
           </v-col>
 
           <v-col cols="12" md="3" class="mt-8 mb-8">
             <div class="fw-600">Антикваріат</div>
             <v-icon style="font-size: 500%;">mdi-trophy-variant</v-icon>
-            <div class="fw-600 fs-150">25</div>
+            <div class="fw-600 fs-150">{{ counts['Кераміка'] }}</div>
           </v-col>
 
         </v-row>
@@ -81,7 +81,7 @@
           <v-col v-for="(item, key) in randomItems" :key="'item-' + key" cols="12" md="4">
             <v-card class="mx-auto d-flex flex-column" style="height: 100%;">
               <div>
-                <v-img height="220" :src="'/images/' + item.image[0]" class="text-right">
+                <v-img height="220" :src="'/thumbs/' + item.image[0]" class="text-right">
                   <v-chip small color="yellow" class="mt-2 mr-2">{{ item.tags[0] }}</v-chip>
                 </v-img>
                 <v-card-title class="tt text--primary">{{ item.name }}</v-card-title>
@@ -105,7 +105,7 @@
               </div>
                 <v-spacer></v-spacer>
                 <v-card-actions>
-                  <v-btn color="yellow" depressed block>
+                  <v-btn router :to="'/lot/' + item.id" color="yellow" depressed block>
                     Переглянути
                   </v-btn>
                 </v-card-actions>
@@ -223,6 +223,7 @@
     </v-card>
 
     <!-- Contacts -->
+    <!--
     <v-card width="100%">
       <div style="position: relative;"  id="contacts" rel="contacts">
         <div class="text-center mb-4 pt-4 w-100" style="position:absolute; z-index: 1999; top: 0px;">
@@ -235,15 +236,16 @@
         <div id="map" style="width: 100%;" :class="{ 'vh75': $vuetify.breakpoint.mdAndUp, 'vh100': !$vuetify.breakpoint.mdAndUp }"></div>
       </div>
     </v-card>
-
+    -->
     </div>
   </v-row>
 </template>
 
 <script>
-const { items, getText } = require('~/content') 
+const { items } = require('~/content') 
 
 export default {
+  transition: 'fade',
   async mounted () {
     // Set counter
     if (new Date() >= new Date('2022-07-31T23:59:59')) {
@@ -252,6 +254,21 @@ export default {
       let date = new Date() <= new Date('2022-07-31T00:00:00') ? new Date('2022-07-31T00:00:00') : new Date('2022-07-31T23:59:59')
       startTimer(this.$refs.counter, date)
     }
+    // Count categories
+    let countedCategories = items.reduce((acc, val) => {
+      for (let el of val.tags) {
+        if (!acc[el]) {
+          acc[el] = 1
+          return acc
+        } else {
+          acc[el] = acc[el] + 1
+          return acc
+        }
+      }
+    }, {})
+    this.$set(this, 'counts', countedCategories)
+    /*
+    // Map was refused
     const map = L.map('map', {
       gestureHandling: true,
       gestureHandlingOptions: {
@@ -269,7 +286,12 @@ export default {
     }).addTo(map)
 
     const marker = L.marker([50.4467423,30.5240062]).addTo(map)
-
+    */
+  },
+  data () {
+    return {
+      counts: {}
+    }
   },
   computed: {
     randomItems: () => {
@@ -366,7 +388,6 @@ const getRandom = (arr, n) => {
 }
 
 
-</script>
 </script>
 <style>
 .gradient {

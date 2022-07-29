@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[63],{512:function(n,o){n.exports="\nРобота вихованця Київського Палацу Дітей та Юнацтва - Юдіна Дар´я, 16 років - “Літній етюд”.\n"}}]);

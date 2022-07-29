@@ -178,7 +178,7 @@ const items = [
     id: 'rgw90',
     name: 'RGW-90 (Matador)',
     text: 'rgw90.js',
-    image: ['rgw90.jpg'],
+    image: ['rgw90-2.jpg'],
     tags: ['Трофеї']
   },
   {

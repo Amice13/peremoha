@@ -6,9 +6,12 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  /*
   router: {
     base: '/peremoha/'
   },
+  */
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -44,10 +47,12 @@ export default {
       { rel: 'stylesheet', href: 'https://unpkg.com/leaflet@1.8.0/dist/leaflet.css' },
       { rel: 'stylesheet', href: 'https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css' },
     ],
+    /*
     script: [
       { src: 'https://unpkg.com/leaflet@1.8.0/dist/leaflet.js', },
       { src: 'https://unpkg.com/leaflet-gesture-handling  ', }
     ]
+    */
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

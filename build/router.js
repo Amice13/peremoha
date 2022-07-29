@@ -4,8 +4,9 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _2289da22 = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _d0465184 = () => interopDefault(import('..\\pages\\peremoha.vue' /* webpackChunkName: "pages/peremoha" */))
+const _050c0dcc = () => interopDefault(import('..\\pages\\rules.vue' /* webpackChunkName: "pages/rules" */))
+const _6d3f5623 = () => interopDefault(import('..\\pages\\search.vue' /* webpackChunkName: "pages/search" */))
+const _6c90ae78 = () => interopDefault(import('..\\pages\\lot\\_id.vue' /* webpackChunkName: "pages/lot/_id" */))
 const _50908827 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -14,19 +15,23 @@ Vue.use(Router)
 
 export const routerOptions = {
   mode: 'history',
-  base: '/peremoha/',
+  base: '/',
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,
 
   routes: [{
-    path: "/inspire",
-    component: _2289da22,
-    name: "inspire"
+    path: "/rules",
+    component: _050c0dcc,
+    name: "rules"
   }, {
-    path: "/peremoha",
-    component: _d0465184,
-    name: "peremoha"
+    path: "/search",
+    component: _6d3f5623,
+    name: "search"
+  }, {
+    path: "/lot/:id?",
+    component: _6c90ae78,
+    name: "lot-id"
   }, {
     path: "/",
     component: _50908827,

@@ -62,14 +62,4 @@
   border-right: 3rem solid transparent;  
   border-bottom: 3rem solid white;
 }
-
-h2 { font-size: 3rem; }
-@media (max-width: 750px) {
-  #background-video { display: none; }
-  body {
-    background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
-    background-size: cover;
-  }
-}
-
 </style>
