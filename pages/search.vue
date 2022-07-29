@@ -35,7 +35,7 @@
 
     <v-card width="100%" class="elevation-0">
       <v-card-text>
-        <v-fade-transition class="mt-8 margin-auto" group tag="v-row" style="max-width: 960px;">
+        <v-fade-transition class="row mt-8 margin-auto" group tag="v-row" style="max-width: 960px;">
           <v-col v-for="(item, key) in limitedItems" :key="'item-' + key" cols="12" md="4">
             <v-card class="mx-auto d-flex flex-column lot" style="height: 100%;">
               <div>
