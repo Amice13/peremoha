@@ -3,28 +3,24 @@
     "name": "rules",
     "path": "/rules",
     "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\rules.vue",
-    "chunkName": "pages/rules",
-    "_name": "_050c0dcc"
+    "chunkName": "pages/rules"
   },
   {
     "name": "search",
     "path": "/search",
     "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\search.vue",
-    "chunkName": "pages/search",
-    "_name": "_6d3f5623"
+    "chunkName": "pages/search"
   },
   {
     "name": "lot-id",
     "path": "/lot/:id?",
     "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\lot\\\\_id.vue",
-    "chunkName": "pages/lot/_id",
-    "_name": "_6c90ae78"
+    "chunkName": "pages/lot/_id"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_50908827"
+    "chunkName": "pages/index"
   }
 ]
