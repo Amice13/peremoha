@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[68],{524:function(n,o){n.exports="\nРобота вихованця Київського Палацу Дітей та Юнацтва - Камиш Маша, 14 років.\n"}}]);

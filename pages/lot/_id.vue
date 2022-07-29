@@ -17,7 +17,7 @@
         <v-card-text>
           <div class="d-flex justify-space-between align-center">
             <div class="flex-grow fs-150 fw-800 red--text text--darken-2">
-              {{ price ? price : '100' }} {{ currency ? currency : 'грн' }}
+              ${{ item.price ? item.price : '1' }}
             </div>
             <div>
             <v-tooltip bottom>
