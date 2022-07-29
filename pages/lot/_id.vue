@@ -37,7 +37,7 @@
           <vue-markdown :key="render" :breaks="false" :source="text"></vue-markdown>
         </v-card-text>
         <v-card-actions>
-          <v-btn router to="/" color="primary" >
+          <v-btn router to="/search" color="primary" :block="$vuetify.breakpoint.smAndDown" >
             Повернутись до пошуку
           </v-btn>
         </v-card-actions>

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[64],{516:function(n,o){n.exports="\nРобота вихованця Київського Палацу Дітей та Юнацтва - Ямкова Настя, 10 років - “Літо на подвір'ї”\n"}}]);

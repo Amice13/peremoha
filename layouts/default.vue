@@ -2,18 +2,18 @@
   <v-app dark>
     <v-navigation-drawer disable-resize-watcher v-model="drawer" fixed app>
       <v-list>
-        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" color="primary" router exact>
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+            <v-list-item-title v-text="item.name" />
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar fixed app dark color="primary">
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up" />
       <div @click="goHome" class="d-flex cursor-pointer">
         <v-img src="/white-logo.svg" height="50" width="70" contain></v-img>
         <div>
@@ -22,8 +22,14 @@
         </div>
       </div>
       <v-spacer />
-      <v-btn class="hidden-sm-and-down" text router to="/search">Лоти</v-btn>
-      <v-btn class="hidden-sm-and-down" text router to="/rules">Правила</v-btn>
+      <v-btn
+        v-for="btn in items.slice(1)"
+        :key="btn.to"
+        class="hidden-sm-and-down"
+        text
+        router
+        :to="btn.to"
+      ><v-icon left>{{ btn.icon }}</v-icon>{{ btn.name }}</v-btn>
     </v-app-bar>
     <v-main>
       <v-container fluid>
@@ -50,6 +56,10 @@ export default {
     return {
       drawer: false,
       items: [
+        { name: 'Головна', to: '/', icon: 'mdi-home' },
+        { name: 'Лоти', to: '/search', icon: 'mdi-cart' },
+        { name: 'Обране', to: '/favourites', icon: 'mdi-heart' },
+        { name: 'Правила', to: '/rules', icon: 'mdi-information' }
       ],
     }
   },
@@ -82,6 +92,7 @@ export default {
 .fw-1100 { font-weight: 1100; }
 .fw-1200 { font-weight: 1200; }
 .fs-80 { font-size: 80%; }
+.fs-100 { font-size: 100% !important; }
 .fs-120 { font-size: 120%; }
 .fs-150 { font-size: 150%; }
 .fs-175 { font-size: 175%; }

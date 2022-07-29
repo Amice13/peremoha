@@ -51,8 +51,9 @@
                     <div>
                     <v-tooltip bottom>
                       <template v-slot:activator="{ on, attrs }">
-                        <v-btn color="primary" icon text v-bind="attrs" v-on="on">
-                          <v-icon color="primary">mdi-heart-outline</v-icon>
+                        <v-btn @click="changeFavourite(item.id)" color="primary" icon text v-bind="attrs" v-on="on">
+                          <v-icon v-show="!favourites.includes(item.id)" color="primary">mdi-heart-outline</v-icon>
+                          <v-icon v-show="favourites.includes(item.id)" color="primary">mdi-heart</v-icon>
                         </v-btn>
                       </template>
                       <span>Додати в список бажань</span>
@@ -112,6 +113,9 @@ export default {
     }
   },
   computed: {
+    favourites: function () {
+      return this.$store.state.favourites
+    },
     filteredItems: function () {
       let items = JSON.parse(JSON.stringify(this.items))
       if (this.filters.length) {
@@ -129,6 +133,10 @@ export default {
     }
   },
   methods: {
+    changeFavourite (id) {
+      let action = this.favourites.includes(id) ? 'removeFromFavourites' : 'addToFavourites' 
+      this.$store.commit(action, id)
+    },
     highlightText (s) {
       if (!this.search) return s
       let re = new RegExp(this.search.replace(/[.?!\[\]()*$^-]/g, ''), 'gi')
