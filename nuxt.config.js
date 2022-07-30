@@ -15,7 +15,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s',
+    titleTemplate: '%s - Перемога починається з тебе',
     title: 'Перемога починається з тебе',
     htmlAttrs: {
       lang: 'uk'

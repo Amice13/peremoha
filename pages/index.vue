@@ -41,27 +41,27 @@
         </v-row>
 
         <v-row>
-          <v-col cols="12" md="3" class="mt-8 mb-8">
+          <v-col @click="goTo('Трофеї')" cols="12" md="3" class="mt-8 mb-8 cursor-pointer">
             <div class="fw-600">Трофеї</div>
-            <v-icon style="font-size: 500%;">mdi-pistol</v-icon>
+            <v-icon style="font-size: 500%;" class="cursor-pointer">mdi-pistol</v-icon>
             <div class="fw-600 fs-150">{{ counts['Трофеї'] }}</div>
           </v-col>
 
-          <v-col cols="12" md="3" class="mt-8 mb-8">
+          <v-col @click="goTo('Книги')" cols="12" md="3" class="mt-8 mb-8">
             <div class="fw-600">Книги</div>
-            <v-icon style="font-size: 500%;">mdi-book-open-variant</v-icon>
+            <v-icon style="font-size: 500%;" class="cursor-pointer">mdi-book-open-variant</v-icon>
             <div class="fw-600 fs-150">{{ counts['Книги'] }}</div>
           </v-col>
 
-          <v-col cols="12" md="3" class="mt-8 mb-8">
+          <v-col @click="goTo('Живопис')" cols="12" md="3" class="mt-8 mb-8">
             <div class="fw-600">Живопис</div>
-            <v-icon style="font-size: 500%;">mdi-palette</v-icon>
+            <v-icon style="font-size: 500%;" class="cursor-pointer">mdi-palette</v-icon>
             <div class="fw-600 fs-150">{{ counts['Живопис'] }}</div>
           </v-col>
 
-          <v-col cols="12" md="3" class="mt-8 mb-8">
+          <v-col @click="goTo('Кераміка')" cols="12" md="3" class="mt-8 mb-8">
             <div class="fw-600">Антикваріат</div>
-            <v-icon style="font-size: 500%;">mdi-trophy-variant</v-icon>
+            <v-icon style="font-size: 500%;" class="cursor-pointer">mdi-trophy-variant</v-icon>
             <div class="fw-600 fs-150">{{ counts['Кераміка'] }}</div>
           </v-col>
 
@@ -114,7 +114,7 @@
           </v-col>
         </v-row>
         <v-row class="mt-2 mb-8">
-          <v-btn class="margin-auto" color="primary">Дивитися всі <v-icon right>mdi-chevron-down</v-icon></v-btn>
+          <v-btn class="margin-auto" color="primary" router to="/search">Дивитися всі <v-icon right>mdi-chevron-down</v-icon></v-btn>
         </v-row>
         <v-row class="mb-8">
           <v-img width="40" height="120" contain src="/down-blue.svg"></v-img>
@@ -206,18 +206,21 @@
         <div class="tt fw-400 text--primary fs-175 uppercase mb-4">Організатори</div>
         <v-row>
           <v-col cols="12" md="6" class="pa-12">
+            <v-img src="/ridna-obolon.svg" contain height="300"></v-img>
+            <div class="fw-600 mt-8">БЛАГОДІЙНИЙ ФОНД «РІДНА ОБОЛОНЬ»</div>
+            <div>04210, місто Київ, Оболонська набережна, будинок 19, корпус 5</div>
+            <div class="yellow" style="display: inline-block; padding: 0px 12px;">ЄДРПОУ: 44529473</div>
+            <div class="mt-4">IBAN UA933203710000000260043105600</div>
+          </v-col>
+          <v-col cols="12" md="6" class="pa-12">
             <v-img src="/sintez.svg" contain height="300"></v-img>
             <div class="fw-600 mt-8">БЛАГОДІЙНА ОРГАНІЗАЦІЯ БЛАГОДІЙНИЙ ФОНД "Синтез України"</div>
             <div>Україна, 02081, місто Київ, вул.Здолбунівська, будинок 7А</div>
             <div class="yellow" style="display: inline-block; padding: 0px 12px;">ЄДРПОУ: 44747957</div>
             <div class="mt-4">IBAN UA923204780000026009924922416</div>
           </v-col>
-          <v-col cols="12" md="6" class="pa-12">
-            <v-img src="/ridna-obolon.svg" contain height="300"></v-img>
-            <div class="fw-600 mt-8">БЛАГОДІЙНИЙ ФОНД «РІДНА ОБОЛОНЬ»</div>
-            <div>04210, місто Київ, Оболонська набережна, будинок 19, корпус 5</div>
-            <div class="yellow" style="display: inline-block; padding: 0px 12px;">ЄДРПОУ: 44529473</div>
-            <div class="mt-4">IBAN UA933203710000000260043105600</div>
+          <v-col cols="12" class="pa-12">
+            <v-img src="/qr_obolon.jpg" contain height="300"></v-img>
           </v-col>
         </v-row>
       </v-card-text>
@@ -303,6 +306,9 @@ export default {
     }
   },
   methods: {
+    goTo (pageType) {
+      this.$router.push('/search?q=' + pageType)
+    },
     changeFavourite (id) {
       let action = this.favourites.includes(id) ? 'removeFromFavourites' : 'addToFavourites' 
       this.$store.commit(action, id)
@@ -420,5 +426,8 @@ const getRandom = (arr, n) => {
 }
 .vh100 {
   height: 100vh
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 </style>

@@ -93,6 +93,8 @@ const intersection = (array1, array2) => {
 export default {
   transition: 'fade',
   async mounted () {
+    let { query } = this.$route
+    if (query && query.q) this.filters.push(this.filtersList.map(el => el.name).indexOf(query.q))
     items.sort((a, b) => {
       a.name.localeCompare(b.name)
     })
