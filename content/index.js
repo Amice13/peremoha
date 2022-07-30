@@ -9,6 +9,15 @@ const items = [
     price: 40
   },
   {
+    id: 'stamps01-1',
+    bookletId: 8,
+    name: 'Оформлені марки в мінімалістичному стилі',
+    text: 'stamps01.js',
+    image: ['stamps01-1.jpg'],
+    tags: ['Марки', 'Мистецтво'],
+    price: 1500
+  },
+  {
     id: 'stamps02',
     bookletId: 12,
     name: 'Оформлені марки в мінімалістичному стилі',
@@ -96,7 +105,7 @@ const items = [
   },
   {
     id: 'zmiinyi',
-    bookletId: 32,
+    bookletId: 22,
     name: '«Острів Зміїний». Ігор Летинський',
     text: 'zmiinyi.js',
     image: ['zmiinyi.jpg'],
@@ -311,7 +320,7 @@ const items = [
   {
     id: 'rpg',
     bookletId: 40,
-    name: 'Рпг-22-(Нетто)',
+    name: 'Тубуси від РПГ',
     text: 'rpg.js',
     image: ['rpg.jpg'],
     tags: ['Трофеї'],
@@ -641,7 +650,7 @@ const items = [
   },
   {
     id: 'book27',
-    bookletId: 300,
+    bookletId: 46,
     name: '«Визначне Жіноцтво України» Луговий О. 1942 рік',
     text: 'book27.js',
     image: ['book27.jpg', 'book27-1.jpg'],
@@ -708,10 +717,11 @@ const items = [
     price: 300
   },
   {
-    id: 'dictionay',
+    id: 'dictionary',
+    bookletId: 48,
     name: '«Московсько-український словник» Дубровського В. В. 1918 рік',
-    text: 'dictionay.js',
-    image: ['dictionay.jpg', 'dictionay2.jpg'],
+    text: 'dictionary.js',
+    image: ['dictionary.jpg', 'dictionary2.jpg'],
     tags: ['Книги'],
     price: 200
   },
