@@ -255,7 +255,7 @@ export default {
     if (new Date() >= new Date('2022-07-31T23:59:59')) {
       this.$refs.counter.classList.add('d-none')      
     } else {
-      let date = new Date() <= new Date('2022-07-31T00:00:00') ? new Date('2022-07-31T00:00:00') : new Date('2022-07-31T23:59:59')
+      let date = new Date() <= new Date('2022-07-31T16:00:00') ? new Date('2022-07-31T16:00:00') : new Date('2022-07-31T23:59:59')
       startTimer(this.$refs.counter, date)
     }
     // Count categories
@@ -320,7 +320,7 @@ export default {
 const startTimer = (element, date) => {
 
   // Set the date we're counting down to
-  const countDownDate = new Date('2022-07-31T00:00:00').getTime()
+  const countDownDate = new Date('2022-07-31T16:00:00').getTime()
 
   // Update the count down every 1 second
   const x = setInterval(() => {
