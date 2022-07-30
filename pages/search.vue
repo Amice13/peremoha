@@ -96,7 +96,10 @@ export default {
     let { query } = this.$route
     if (query && query.q) this.filters.push(this.filtersList.map(el => el.name).indexOf(query.q))
     items.sort((a, b) => {
-      a.name.localeCompare(b.name)
+      return a.bookletId !== b.bookletId
+      if (a.bookletId !== b.bookletId) return a.bookletId - b.bookletId
+      if (!a.bookletId || b.bookletId) return 1
+      return a.name.localeCompare(b.name)
     })
     this.$set(this, 'items', items)
   },
@@ -128,7 +131,14 @@ export default {
         let re = new RegExp(this.search.replace(/[.?!\[\]()*$^-]/g, ''), 'gi')
         items = items.filter(el =>re.test(el.name))
       }
-      return items
+      return items.sort((a, b) => {
+        a.bookletId = a.bookletId ? a.bookletId : 1000
+        b.bookletId = b.bookletId ? b.bookletId : 1000
+        console.log(a.bookletId, b.bookletId)
+        if (a.bookletId !== b.bookletId) return a.bookletId - b.bookletId
+        if (!a.bookletId || b.bookletId) return 1
+        return a.name.localeCompare(b.name)
+      })
     },
     limitedItems: function () {
       return this.filteredItems.slice(0, this.show)

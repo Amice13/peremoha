@@ -96,7 +96,7 @@ const items = [
   },
   {
     id: 'zmiinyi',
-    bookletId: 11,
+    bookletId: 32,
     name: '«Острів Зміїний». Ігор Летинський',
     text: 'zmiinyi.js',
     image: ['zmiinyi.jpg'],
@@ -256,7 +256,7 @@ const items = [
   },
   {
     id: 'kater',
-    bookletId: 9,
+    bookletId: 27,
     name: 'Російська коробка боєприпасів з якорем від россійського катера',
     text: 'kater.js',
     image: ['kater.jpg'],
@@ -367,7 +367,7 @@ const items = [
     text: 'ceramic1.js',
     image: ['ceramic1.jpeg'],
     tags: ['Кераміка', 'Антикваріат'],
-    price: 10000
+    price: 1000
   },
   {
     id: 'ceramic2',
@@ -375,7 +375,7 @@ const items = [
     text: 'ceramic2.js',
     image: ['ceramic2.jpeg'],
     tags: ['Кераміка', 'Антикваріат'],
-    price: 30000
+    price: 3000
   },
   {
     id: 'ceramic3',
@@ -383,7 +383,7 @@ const items = [
     text: 'ceramic3.js',
     image: ['ceramic3.jpeg'],
     tags: ['Кераміка', 'Антикваріат'],
-    price: 30000
+    price: 3000
   },
   {
     id: 'ceramic4',
@@ -391,7 +391,7 @@ const items = [
     text: 'ceramic4.js',
     image: ['ceramic4.jpeg'],
     tags: ['Кераміка', 'Антикваріат'],
-    price: 20000
+    price: 2000
   },
   {
     id: 'ceramic5',
@@ -399,7 +399,7 @@ const items = [
     text: 'ceramic5.js',
     image: ['ceramic5.jpeg'],
     tags: ['Кераміка', 'Антикваріат'],
-    price: 40000
+    price: 4000
   },
   {
     id: 'ceramic6',
@@ -658,7 +658,7 @@ const items = [
   },
   {
     id: 'book29',
-    bookletId: 2,
+    bookletId: 1,
     name: 'Шевченко. Ілюстрований «Кобзарь»',
     text: 'book29.js',
     image: ['book29.jpg', 'book29-1.jpg', 'book29-2.jpg'],
