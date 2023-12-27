@@ -9,6 +9,7 @@ export default {
 
 
   router: {
+    mode: 'hash',
     base: '/peremoha/'
   },
 
