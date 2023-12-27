@@ -1,10 +1,10 @@
 <template>
   <div class="video-bkg">
     <video id="video-header" width="100%" autoplay muted loop poster="./headers/gleb-albovsky-sbPI02mZqxs-unsplash.jpg">
-      <source src="/big-header.mp4" type="video/mp4">
+      <source src="/peremoha/big-header.mp4" type="video/mp4">
     </video>
     <div class="video-bkg-text d-flex justify-center align-center">
-      <v-img src="/logo-full.svg" height="40vh" style="max-width: 80%; max-height: 40vh;" contain></v-img>
+      <v-img src="/peremoha/logo-full.svg" height="40vh" style="max-width: 80%; max-height: 40vh;" contain></v-img>
     </div>
     <div class="arrow-wrapper">
       <div class="arrow-up"></div>

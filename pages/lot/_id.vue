@@ -6,7 +6,7 @@
         <v-carousel-item v-for="(img, key) in image" :key="key">
           <v-sheet height="100%" tile>
             <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-img :src="'/images/' + img" height="300"></v-img>
+              <v-img :src="'/peremoha/images/' + img" height="300"></v-img>
             </v-row>
           </v-sheet>
         </v-carousel-item>

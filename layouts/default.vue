@@ -15,7 +15,7 @@
     <v-app-bar fixed app dark color="primary">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up" />
       <div @click="goHome" class="d-flex cursor-pointer">
-        <v-img src="/white-logo.svg" height="50" width="70" contain></v-img>
+        <v-img src="/peremoha/white-logo.svg" height="50" width="70" contain></v-img>
         <div>
           <div class="fw-400 accent--text fs-120">ПЕРЕМОГА</div>
           <div class="fw-300 fs-80">ПОЧИНАЄТЬСЯ З ТЕБЕ</div>
