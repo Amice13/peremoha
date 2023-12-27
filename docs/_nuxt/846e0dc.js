@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{462:function(n,o){n.exports="\nРобота вихованця Київського Палацу Дітей та Юнацтва - Костенко Мирослав - “Осінній настрій”\n"}}]);

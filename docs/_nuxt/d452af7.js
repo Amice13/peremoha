@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{461:function(n,o){n.exports="\nРобота вихованця Київського Палацу Дітей та Юнацтва - Сагайдак Катерини, 9 років - “Осінній діалог”.\n"}}]);

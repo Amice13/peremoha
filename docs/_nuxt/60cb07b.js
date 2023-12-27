@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[85],{543:function(n,o){n.exports="\nАвтомат АК-74 - трофейна зброя українських Захисників.\nНаші Герої вилучили її у загиблого окупанта."}}]);
