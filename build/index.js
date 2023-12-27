@@ -5,7 +5,7 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from '..\\layouts\\error.vue'
+import NuxtError from '../layouts/error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
@@ -13,10 +13,10 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_312821d1 from 'nuxt_plugin_plugin_312821d1' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_plugin_182253c3 from 'nuxt_plugin_plugin_182253c3' // Source: .\\vuetify\\plugin.js (mode: 'all')
-import nuxt_plugin_axios_03af0774 from 'nuxt_plugin_axios_03af0774' // Source: .\\axios.js (mode: 'all')
-import nuxt_plugin_vuexpersist_13f465a2 from 'nuxt_plugin_vuexpersist_13f465a2' // Source: ..\\plugins\\vuex-persist (mode: 'client')
+import nuxt_plugin_plugin_9895a754 from 'nuxt_plugin_plugin_9895a754' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_plugin_40093150 from 'nuxt_plugin_plugin_40093150' // Source: ./vuetify/plugin.js (mode: 'all')
+import nuxt_plugin_axios_3ea6a86c from 'nuxt_plugin_axios_3ea6a86c' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_vuexpersist_13f465a2 from 'nuxt_plugin_vuexpersist_13f465a2' // Source: ../plugins/vuex-persist (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -210,16 +210,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_312821d1 === 'function') {
-    await nuxt_plugin_plugin_312821d1(app.context, inject)
+  if (typeof nuxt_plugin_plugin_9895a754 === 'function') {
+    await nuxt_plugin_plugin_9895a754(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_182253c3 === 'function') {
-    await nuxt_plugin_plugin_182253c3(app.context, inject)
+  if (typeof nuxt_plugin_plugin_40093150 === 'function') {
+    await nuxt_plugin_plugin_40093150(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_03af0774 === 'function') {
-    await nuxt_plugin_axios_03af0774(app.context, inject)
+  if (typeof nuxt_plugin_axios_3ea6a86c === 'function') {
+    await nuxt_plugin_axios_3ea6a86c(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vuexpersist_13f465a2 === 'function') {

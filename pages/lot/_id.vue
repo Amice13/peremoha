@@ -17,7 +17,7 @@
         <v-card-text>
           <div class="d-flex justify-space-between align-center">
             <div class="flex-grow fs-150 fw-800 red--text text--darken-2">
-              ${{ item.price ? item.price : '1' }}
+              ${{ price ? price : '1' }}
             </div>
             <div>
             <v-tooltip bottom>
@@ -68,6 +68,7 @@ export default {
   },
   data () {
     return {
+      model: 1,
       id: '',
       name: '',
       text: '',

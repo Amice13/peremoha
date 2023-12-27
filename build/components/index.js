@@ -1,4 +1,4 @@
-export const VideoHeader = () => import('../..\\components\\VideoHeader.vue' /* webpackChunkName: "components/video-header" */).then(c => wrapFunctional(c.default || c))
+export { default as VideoHeader } from '../../components/VideoHeader.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

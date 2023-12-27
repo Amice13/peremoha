@@ -4,42 +4,42 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _eeb76a36 = () => interopDefault(import('..\\pages\\favourites.vue' /* webpackChunkName: "pages/favourites" */))
-const _050c0dcc = () => interopDefault(import('..\\pages\\rules.vue' /* webpackChunkName: "pages/rules" */))
-const _6d3f5623 = () => interopDefault(import('..\\pages\\search.vue' /* webpackChunkName: "pages/search" */))
-const _6c90ae78 = () => interopDefault(import('..\\pages\\lot\\_id.vue' /* webpackChunkName: "pages/lot/_id" */))
-const _50908827 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _60d46652 = () => interopDefault(import('../pages/favourites.vue' /* webpackChunkName: "pages/favourites" */))
+const _a02cc6cc = () => interopDefault(import('../pages/rules.vue' /* webpackChunkName: "pages/rules" */))
+const _1e13a115 = () => interopDefault(import('../pages/search.vue' /* webpackChunkName: "pages/search" */))
+const _1f17b45f = () => interopDefault(import('../pages/lot/_id.vue' /* webpackChunkName: "pages/lot/_id" */))
+const _0923d216 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
 Vue.use(Router)
 
 export const routerOptions = {
-  mode: 'history',
-  base: '/',
+  mode: 'hash',
+  base: '/peremoha/',
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,
 
   routes: [{
     path: "/favourites",
-    component: _eeb76a36,
+    component: _60d46652,
     name: "favourites"
   }, {
     path: "/rules",
-    component: _050c0dcc,
+    component: _a02cc6cc,
     name: "rules"
   }, {
     path: "/search",
-    component: _6d3f5623,
+    component: _1e13a115,
     name: "search"
   }, {
     path: "/lot/:id?",
-    component: _6c90ae78,
+    component: _1f17b45f,
     name: "lot-id"
   }, {
     path: "/",
-    component: _50908827,
+    component: _0923d216,
     name: "index"
   }],
 

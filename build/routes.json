@@ -2,36 +2,36 @@
   {
     "name": "favourites",
     "path": "/favourites",
-    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\favourites.vue",
+    "component": "/home/amice13/GIT/peremoha/pages/favourites.vue",
     "chunkName": "pages/favourites",
-    "_name": "_eeb76a36"
+    "_name": "_60d46652"
   },
   {
     "name": "rules",
     "path": "/rules",
-    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\rules.vue",
+    "component": "/home/amice13/GIT/peremoha/pages/rules.vue",
     "chunkName": "pages/rules",
-    "_name": "_050c0dcc"
+    "_name": "_a02cc6cc"
   },
   {
     "name": "search",
     "path": "/search",
-    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\search.vue",
+    "component": "/home/amice13/GIT/peremoha/pages/search.vue",
     "chunkName": "pages/search",
-    "_name": "_6d3f5623"
+    "_name": "_1e13a115"
   },
   {
     "name": "lot-id",
     "path": "/lot/:id?",
-    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\lot\\\\_id.vue",
+    "component": "/home/amice13/GIT/peremoha/pages/lot/_id.vue",
     "chunkName": "pages/lot/_id",
-    "_name": "_6c90ae78"
+    "_name": "_1f17b45f"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Amice13\\\\GIT\\\\peremoha\\\\pages\\\\index.vue",
+    "component": "/home/amice13/GIT/peremoha/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_50908827"
+    "_name": "_0923d216"
   }
 ]

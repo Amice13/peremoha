@@ -134,7 +134,6 @@ export default {
       return items.sort((a, b) => {
         a.bookletId = a.bookletId ? a.bookletId : 1000
         b.bookletId = b.bookletId ? b.bookletId : 1000
-        console.log(a.bookletId, b.bookletId)
         if (a.bookletId !== b.bookletId) return a.bookletId - b.bookletId
         if (!a.bookletId || b.bookletId) return 1
         return a.name.localeCompare(b.name)
