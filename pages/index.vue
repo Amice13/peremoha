@@ -6,7 +6,7 @@
     <!-- Main info -->
     <div cols="12" class="ma-0" style="width: 100%;margin-top: -32px !important;">
       <div class="pr-4 pl-4">
-        <v-img src="/hr-blue.svg" width="420px" class="margin-auto" style="min-width: 50%;"></v-img>
+        <v-img src="/peremoha/hr-blue.svg" width="420px" class="margin-auto" style="min-width: 50%;"></v-img>
       </div>
       <!-- Short description -->
       <v-card width="100%" class="elevation-0 text-center mt-8">
@@ -81,7 +81,7 @@
           <v-col v-for="(item, key) in randomItems" :key="'item-' + key" cols="12" md="4">
             <v-card class="mx-auto d-flex flex-column" style="height: 100%;">
               <div>
-                <v-img height="220" :src="'/thumbs/' + item.image[0]" class="text-right">
+                <v-img height="220" :src="'/peremoha/thumbs/' + item.image[0]" class="text-right">
                   <v-chip small color="yellow" class="mt-2 mr-2">{{ item.tags[0] }}</v-chip>
                 </v-img>
                 <v-card-title class="tt text--primary">{{ item.name }}</v-card-title>
@@ -117,7 +117,7 @@
           <v-btn class="margin-auto" color="primary" router to="/search">Дивитися всі <v-icon right>mdi-chevron-down</v-icon></v-btn>
         </v-row>
         <v-row class="mb-8">
-          <v-img width="40" height="120" contain src="/down-blue.svg"></v-img>
+          <v-img width="40" height="120" contain src="/peremoha/down-blue.svg"></v-img>
         </v-row>
       </v-card-text>
     </v-card>
@@ -125,7 +125,7 @@
     <!-- Sponsors -->
     <v-img
       gradient="to top right, rgba(32, 63, 106,0.95), rgba(39, 92, 157,0.95)"
-      src="/headers/silver-ringvee--hZvVWVhk3g-unsplash.jpg" :aspect-ratio="16/1"
+      src="/peremoha/headers/silver-ringvee--hZvVWVhk3g-unsplash.jpg" :aspect-ratio="16/1"
       class="bg align-center">
       <v-card-text class="margin-auto text-center white--text">
         <v-row class="mt-8">
@@ -139,7 +139,7 @@
             <a href="https://standforukraine.com/" target="_blank">
               <v-img
                 class="margin-auto"
-                src="/stand-for-ukraine-white.svg"
+                src="/peremoha/stand-for-ukraine-white.svg"
                 width="120"
                 alt="Stand For Ukraine"
               ></v-img>
@@ -149,7 +149,7 @@
             <a href="https://ihelp.in.ua" target="_blank">
               <v-img
                 class="margin-auto"
-                src="/ihelp-white.png"
+                src="/peremoha/ihelp-white.png"
                 width="160"
                 alt="БФ «Я допомагаю»"
               ></v-img>
@@ -159,7 +159,7 @@
             <a href="https://standforukraine.com/" target="_blank">
               <v-img
                 class="margin-auto"
-                src="/n-white.svg"
+                src="/peremoha/n-white.svg"
                 width="120"
                 alt="N"
               ></v-img>
@@ -169,7 +169,7 @@
             <a href="https://standforukraine.com/" target="_blank">
               <v-img
                 class="margin-auto"
-                src="/dpl-white.png"
+                src="/peremoha/dpl-white.png"
                 width="220"
                 alt="DPL Dipel"
               ></v-img>
@@ -181,7 +181,7 @@
             <a href="https://standforukraine.com/" target="_blank">
               <v-img
                 class="margin-auto"
-                src="/ukraine-it-hub.svg"
+                src="/peremoha/ukraine-it-hub.svg"
                 width="240"
                 alt="Ukraine IT HUB"
               ></v-img>
@@ -191,7 +191,7 @@
             <a href="https://standforukraine.com/" target="_blank">
               <v-img
                 class="margin-auto"
-                src="/figaro-white.svg"
+                src="/peremoha/figaro-white.svg"
                 width="240"
                 alt="Figaro Catering"
               ></v-img>
@@ -206,21 +206,21 @@
         <div class="tt fw-400 text--primary fs-175 uppercase mb-4">Організатори</div>
         <v-row>
           <v-col cols="12" md="6" class="pa-12">
-            <v-img src="/ridna-obolon.svg" contain height="300"></v-img>
+            <v-img src="/peremoha/ridna-obolon.svg" contain height="300"></v-img>
             <div class="fw-600 mt-8">БЛАГОДІЙНИЙ ФОНД «РІДНА ОБОЛОНЬ»</div>
             <div>04210, місто Київ, Оболонська набережна, будинок 19, корпус 5</div>
             <div class="yellow" style="display: inline-block; padding: 0px 12px;">ЄДРПОУ: 44529473</div>
             <div class="mt-4">IBAN UA933203710000000260043105600</div>
           </v-col>
           <v-col cols="12" md="6" class="pa-12">
-            <v-img src="/sintez.svg" contain height="300"></v-img>
+            <v-img src="/peremoha/sintez.svg" contain height="300"></v-img>
             <div class="fw-600 mt-8">БЛАГОДІЙНА ОРГАНІЗАЦІЯ БЛАГОДІЙНИЙ ФОНД "Синтез України"</div>
             <div>Україна, 02081, місто Київ, вул.Здолбунівська, будинок 7А</div>
             <div class="yellow" style="display: inline-block; padding: 0px 12px;">ЄДРПОУ: 44747957</div>
             <div class="mt-4">IBAN UA923204780000026009924922416</div>
           </v-col>
           <v-col cols="12" class="pa-12">
-            <v-img src="/qr_obolon.jpg" contain height="300"></v-img>
+            <v-img src="/peremoha/qr_obolon.jpg" contain height="300"></v-img>
           </v-col>
         </v-row>
       </v-card-text>

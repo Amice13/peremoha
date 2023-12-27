@@ -21,7 +21,7 @@
           </v-btn-toggle>
         </v-col>
         <div class="pr-4 pl-4 w-100">
-          <v-img src="/hr2-blue.svg" width="420px" class="margin-auto" style="min-width: 50%;"></v-img>
+          <v-img src="/peremoha/hr2-blue.svg" width="420px" class="margin-auto" style="min-width: 50%;"></v-img>
         </div>
         <!-- Short description -->
         <v-card width="100%" class="elevation-0 text-center" v-show="favourites.length">
@@ -57,7 +57,7 @@
           <v-col v-for="(item, key) in limitedItems" :key="'item-' + key" cols="12" md="4">
             <v-card class="mx-auto d-flex flex-column lot" style="height: 100%;">
               <div>
-                <v-img height="220" :src="'/thumbs/' + item.image[0]" class="text-right">
+                <v-img height="220" :src="'/peremoha/thumbs/' + item.image[0]" class="text-right">
                   <v-chip small color="yellow" class="mt-2 mr-2">{{ item.tags[0] }}</v-chip>
                 </v-img>
                 <v-card-title class="tt text--primary"><span v-html="highlightText(item.name)"></span></v-card-title>
